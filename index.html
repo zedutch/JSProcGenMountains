@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        
+        <script
+  src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+  integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+  crossorigin="anonymous"></script>
+
+        <!-- Game Files -->
+        <script type="text/javascript" src="main.js" defer></script>
+
+        <title>ProcGenChallenge - Mountain</title>
+    </head>
+
+    <body onload="generateNewMountain()">
+        <canvas id="main-canvas" width="800" height="600">
+            <a href="http://browsehappy.com/" target="_blank">Your browser does not seem to support HTML 5 yet, why not get a new one?</a>
+        </canvas>
+        <span style="margin-left: 50px;">
+			<input type="button" value="Generate a new, random mountain!" onclick="generateNewMountain()">
+		</span>
+        <span style="margin-left: 50px;">
+        	Or use a specific seed: 
+        	<input type="number" value="0" id="seed-input">
+        	<input type="button" value="Generate!" onclick="generateSeededMountain()">
+		</span>
+    </body>
+</html>
